@@ -1,5 +1,5 @@
 """
-Display matrice
+Display matrix
 """
 def display_matrice(matrice, dimension):
     for i in range(dimension):
@@ -8,7 +8,7 @@ def display_matrice(matrice, dimension):
         print()
 
 """
-Check if the matrice is magic
+Check if the matrix is magic
 """
 def matrice_is_magic(matrice, dimension):
     for i in range(dimension):
@@ -18,7 +18,7 @@ def matrice_is_magic(matrice, dimension):
     return True
 
 """
-Init matrice
+Init matrix
 """
 def init_matrice(dimension):
     matrice = []
@@ -27,7 +27,7 @@ def init_matrice(dimension):
     return matrice
 
 """
-Get indice of line and column
+Get line and column indice
 """
 def get_indice(matrice, i, j, dimension):
     if(matrice[(i+1)%dimension][(j+1)%dimension]==0):
