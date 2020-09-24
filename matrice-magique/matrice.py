@@ -4,7 +4,7 @@ Display matrix
 def display_matrice(matrice, dimension):
     for i in range(dimension):
         for j in range(dimension):
-            print(matrice[i][j], end=' ')
+            print(str(matrice[i][j]).zfill(len(str(dimension*dimension))), end=' ')
         print()
 
 """
@@ -40,7 +40,7 @@ Main program
 """
 def main():
     #init matrice
-    matrice_dimension=3
+    matrice_dimension=5
     matrice_magic = init_matrice(matrice_dimension)
     #init variables
     step=1
